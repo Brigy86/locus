@@ -24,14 +24,14 @@
             margin: 0 0.5rem;
 
             animation: bounce; /* referring directly to the animation's @keyframe declaration */
-            animation-duration:unset; /* don't forget to set a duration! */
+            animation-duration:inherit ; /* don't forget to set a duration! */
             animation-timeline: 0s;
             animation-delay: 0s;
             }
 
             /* For animate.css */
             /* This only changes this particular animation duration */
-            .animate__animated.animate__bounce {
+            .animate__animated.animate__shakeY {
             --animate-duration: infinite;
             --animation-iteration-count: infinite;
             }
@@ -60,8 +60,7 @@
         <!-- Navbar begins -->
         <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#home"><img src="pics/logo locus1.png" alt="logo" style="padding-left: 500
-              %;"></a>
+              <a class="navbar-brand" href="#home"><img src="pics/logo locus1.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
               </button>
@@ -128,8 +127,9 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div><br>
+        <!-- Carousel Ends -->
 
-        <!-- ABOUT US -->
+        <!-- ABOUT US Begins -->
         <div>
             <div style="padding-top: 10%;" class=" container text-center" id="about">
                 <h2 style="font-family: Tahoma; color: rgb(29, 29, 226);">ABOUT US</h2>
@@ -141,7 +141,7 @@
             <div class="container" style="padding-top: 4%;">
                 <div class="row">
                     <!-- Mission -->
-                    <div class="col p-4 text-center text-white" style="background-color: rgb(29, 29, 226); border-radius: 50px; margin-right: 10px; margin-left: 10px;">
+                    <div class="col-md p-4 text-center text-white" style="background-color: rgb(29, 29, 226); border-radius: 50px; margin-right: 10px; margin-left: 10px;">
                         <div>
                             <h2 style="font-family: Tahoma;">OUR MISSION</h2>
                             <P>To provide excellent topnotch and value oriented services to our client that will reflect our leading position in our industry.</P>
@@ -149,7 +149,7 @@
                     </div>
 
                     <!-- Vision -->
-                    <div class="col p-4 text-center text-white" style="background-color: rgb(29, 29, 226); border-radius: 50px; margin-left: 10px; margin-right: 10px; margin-top: 10px; padding-top: 5%;">
+                    <div class="col-md p-4 text-center text-white" style="background-color: rgb(29, 29, 226); border-radius: 50px; margin-left: 10px; margin-right: 10px; margin-top: 10px; padding-top: 5%;">
                         <div>
                             <h2 style="font-family: Tahoma;">OUR VISION</h2>
                             <P>To be a reliable and relevant partner to our clients.</P>
@@ -158,6 +158,7 @@
                 </div>
             </div>
         </div>
+        <!-- About Us Ends -->
 
         <!-- Services -->
         <div class="container" style="padding-top: 10%;" id="services">
@@ -165,7 +166,7 @@
             <h2 class="text-center" style="font-family: Tahoma;">WHAT WE DO</h2>
             <div class="row">
                 <!-- PROPERTY INVESTIGATION -->
-                <div class="col p-3">
+                <div class="col-md p-3">
                     <img src="pics/manage2.jpg" alt="" style="border-radius: 30px;">
                     <h5 style="padding-top: 10%;">PROPERTY INVESTIGATION</h5>
                     <P style="text-align: left;">
@@ -183,7 +184,7 @@
                 </div>
 
                 <!-- PROPERTY MANAGEMENT -->
-                <div class="col p-3">
+                <div class="col-md p-3">
                     <img src="pics/manage.jpg" alt="" style="border-radius: 30px;">
                     <h5 style="padding-top: 10%;">PROPERTY MANAGEMENT</h5>
                     <P style="text-align: left;">
@@ -199,7 +200,7 @@
                 </div>
 
                 <!-- PROPERTY PERFECTION -->
-                <div class="col p-3">
+                <div class="col-md p-3">
                     <img src="pics/property.jpg" alt="" style="border-radius: 30px;">
                     <h5 style="padding-top: 10%;">PROPERTY PERFECTION</h5>
                     <P style="text-align: left;">
@@ -223,7 +224,7 @@
                     <h2 style="font-family: Tahoma; color: rgb(29, 29, 226);">Contact Us</h2>
 
                     <!-- Contact info -->
-                    <div class="col p-3">
+                    <div class="col-md p-3">
                         <div class="contact__details">
                             <h5 class="contact__title">Reach Us at:</h5>
                             <a class="contact__mail" href="mailto:locus.classicus@yahoo.com" id="email" style="text-decoration: none; color: black;">locus.classicus@yahoo.com</a><br>
@@ -241,7 +242,7 @@
                     </div>
 
                     <!-- Form -->
-                    <div class="col p-3" id="hire">
+                    <div class="col-md p-3" id="hire">
                         <h5>Let's work together, feel free, let's talk</h5>
                         <form action="/action_page.php">
                             <div class="mb-3 mt-3">
@@ -275,15 +276,15 @@
             <div class="footer">
 
                 <!-- Logo -->
-                <div class="row" style="padding-top: 10%;">
-                    <div class="col p-3">
+                <div class="row text-center" style="padding-top: 10%;">
+                    <div class="col-md p-3">
                         <div class="logo">
                             <img src="pics/logo locus.png" alt="" height="50%" width="50%">
                         </div>
                     </div>
 
                     <!-- Address -->
-                    <div class="col p-3">
+                    <div class="col-md p-3">
                         <h4 class="text-center" style="font-family: Tahoma; color: rgb(29, 29, 226);"><b>Visit Us</b></h4>
                         <p>
                             <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i>RIVERS STATE
@@ -294,7 +295,7 @@
                     </div>
 
                     <!-- Contact -->
-                    <div class="col p-3">
+                    <div class="col-md p-3">
                         <h4 style="font-family: Tahoma; color: rgb(29, 29, 226);"><b>Let's Talk</b></h4>
                         <p>
                             <i class="fa fa-envelope-o" aria-hidden="true" style="margin-right: 10px;"></i><a class="contact__mail" href="mailto:locus.classicus@yahoo.com" id="email" style="text-decoration: none; color: black;">locus.classicus@yahoo.com</a>
@@ -307,7 +308,7 @@
                     </div>
 
                     <!-- Follow -->
-                    <div class="col p-3 text-center">
+                    <div class="col-md p-3">
                         <h4 class="text-center" style="font-family: Tahoma; color: rgb(29, 29, 226);"><b>Follow Us</b></h4>
                         <p>
                             <i class="fa fa-facebook" aria-hidden="true" style="margin-right: 10px;"></i>Facebook
@@ -321,9 +322,9 @@
                     </div>
 
                     <!-- Back Up -->
-                    <div class="col p-1">
+                    <div class="col-md p-1">
                         <p style="margin-left: 40px; padding-top: 28%;">
-                            <a href="#home"><i class="fa fa-arrow-circle-up animate__heartBeat" aria-hidden="true" style="font-size: 60px; color: rgb(29, 29, 226);" id="animate"></i></a><br>
+                            <a href="#home"><i class="fa fa-arrow-circle-up animate__animated animate__shakeY" aria-hidden="true" style="font-size: 60px; color: rgb(29, 29, 226);" id="animate"></i></a><br>
                         </p>
                     </div>
                 </div>
@@ -332,7 +333,7 @@
                     <hr>
                     <p>&copy; 2022 Nwogu Bridget</p>
 
-                    <ul class="nav col-md-7 justify-content-end">
+                    <ul class="nav col-md justify-content-end">
                         <li class="nav-item"><a href="#home" class="nav-link text-dark">Home</a></li>
                         <li class="nav-item"><a href="#about" class="nav-link text-dark">About Us</a></li>
                         <li class="nav-item"><a href="#services" class="nav-link text-dark">Services</a></li>
@@ -341,6 +342,7 @@
                 </div>
             </div>
         </div>
+        <!-- Footer ends -->
 
         <script>
             // For the first read more
